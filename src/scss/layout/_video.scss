@@ -1,0 +1,31 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.video {
+   position: relative;
+   height: 100%;
+   overflow: hidden;
+ 
+   .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   video {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      height: 100vh;
+   }
+}
+
+.contenido-video {
+   h1 {
+      color: v.$blanco;
+      font-size: 4rem;
+   }
+}

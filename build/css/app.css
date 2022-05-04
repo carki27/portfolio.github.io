@@ -382,12 +382,16 @@ img {
 
 header {
   background-color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 header ul {
   margin: 0;
 }
 header li {
   list-style: none;
+  width: 100%;
 }
 header a {
   color: #FFFFFF;
@@ -467,4 +471,29 @@ header .nav-menu a {
   .nav-item {
     margin: 16px 0;
   }
+}
+
+.video {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.video .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.video video {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.contenido-video h1 {
+  color: #FFFFFF;
+  font-size: 4rem;
 }

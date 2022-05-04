@@ -4,19 +4,21 @@
 
 header {
    background-color: v.$negro;
-   
+   position: sticky;
+   top: 0;
+   z-index: 1;
+
    ul {
       margin: 0;
    }
-
    li {
       list-style: none;
+      width: 100%;
    }
    a {
       color: v.$blanco;
       text-decoration: none;
    }
-
    .nav-menu {
       a {
          color: v.$blanco;
@@ -42,6 +44,7 @@ header {
    justify-content: space-between;
    align-items: center;
    gap: 60px;
+   // z-index: 1;
    
    @include m.tablet {
       position: fixed;
