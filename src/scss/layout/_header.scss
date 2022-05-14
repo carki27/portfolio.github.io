@@ -1,0 +1,109 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+header {
+   background-color: v.$negro;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+
+   ul {
+      margin: 0;
+   }
+   li {
+      list-style: none;
+      width: 100%;
+   }
+   a {
+      color: v.$blanco;
+      text-decoration: none;
+   }
+   .nav-menu {
+      a {
+         color: v.$blanco;
+      }
+   }
+}
+
+.navegacion {
+   display: flex;
+   min-height: 80px;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 24px;
+
+   .logo {
+      font-size: 24px;
+   }
+}
+
+
+.nav-menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 60px;
+   // z-index: 1;
+   
+   @include m.tablet {
+      position: fixed;
+      right: -100%;
+      top: 80px;
+      gap: 0;
+      flex-direction: column;
+      background-color: v.$negro;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+
+      &.active {
+         right: 0; 
+         margin-top: 0;
+         // background-color: blue;
+      }
+   }
+
+   .nav-link {
+      transition: 0.7s ease;
+
+      // &:hover {
+      //    color: red;
+      // }
+   }
+}
+
+.hamburguer {
+   display: none;
+   cursor: pointer;
+
+   @include m.tablet {
+      display: block;
+
+      &.active .bar:nth-child(2) {
+         opacity: 0;
+      }
+      &.active .bar:nth-child(1) {
+         transform: translateY(8px) rotate(45deg);
+      }
+      &.active .bar:nth-child(3) {
+         transform: translateY(-8px) rotate(-45deg);
+      }
+   }
+}
+
+.bar {
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 5px auto;
+   -webkit-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   background-color: white;
+}
+
+.nav-item {
+   @include m.tablet {
+      margin: 16px 0;
+   }
+}
