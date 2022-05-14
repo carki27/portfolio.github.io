@@ -49,7 +49,7 @@ header {
    @include m.tablet {
       position: fixed;
       right: -100%;
-      top: 70px;
+      top: 80px;
       gap: 0;
       flex-direction: column;
       background-color: v.$negro;
@@ -59,6 +59,8 @@ header {
 
       &.active {
          right: 0; 
+         margin-top: 0;
+         // background-color: blue;
       }
    }
 

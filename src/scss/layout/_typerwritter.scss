@@ -1,0 +1,85 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.wrapper {
+   display: flex; 
+   flex-direction: row;
+   margin-left: 8%;
+
+   @include m.tablet {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .static-txt {
+      margin-right: 2rem;
+   
+      h1 {
+         font-size: 3rem;
+         font-weight: 300;
+      }
+
+      @include m.tablet {
+         margin-bottom: 1rem;
+      }
+   }
+
+   #text {
+      width: fit-content;
+      margin: 0;
+      color: v.$naranja;
+      font-weight: 700;
+      font-size: 3rem;
+   }
+}
+
+
+.text-type {
+   border-right: 0.2rem solid v.$naranja;
+
+   &.active {
+      margin: 0;
+      padding: 0;
+      animation: typing 0.5s infinite alternate;
+   }
+}
+
+@keyframes typing {
+   0% { opacity: .0.8;}
+   100% {opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
