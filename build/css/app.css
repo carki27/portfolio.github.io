@@ -384,7 +384,7 @@ header {
   background-color: #000000;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 header ul {
   margin: 0;
@@ -493,6 +493,32 @@ header .nav-menu a {
   object-fit: cover;
   height: 91.8vh;
 }
+.video .social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  height: 100%;
+  top: 1px;
+  bottom: 0;
+  right: 15px;
+}
+@media (max-width: 768px) {
+  .video .social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: initial;
+    bottom: 15px;
+    top: initial;
+    left: 0;
+  }
+}
+.video .social-media span, .video .social-media svg {
+  z-index: 1;
+}
 
 .wrapper {
   display: flex;
@@ -507,10 +533,16 @@ header .nav-menu a {
 }
 .wrapper .static-txt {
   margin-right: 2rem;
+  z-index: 1;
 }
 .wrapper .static-txt h1 {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 100;
+}
+@media (max-width: 768px) {
+  .wrapper .static-txt h1 {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 768px) {
   .wrapper .static-txt {
@@ -523,6 +555,12 @@ header .nav-menu a {
   color: rgb(230, 88, 11);
   font-weight: 700;
   font-size: 3rem;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .wrapper #text {
+    font-size: 2rem;
+  }
 }
 
 .text-type {
@@ -540,5 +578,63 @@ header .nav-menu a {
   }
   100% {
     opacity: 0;
+  }
+}
+.about {
+  width: 77%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .about {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.about h1, .about h2 {
+  color: rgb(230, 88, 11);
+  font-weight: bold;
+}
+.about h1 {
+  font-size: 37px;
+}
+.about h2 {
+  font-size: 34px;
+}
+.about .about__contenedor {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+}
+@media (max-width: 768px) {
+  .about .about__contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.about .about__contenedor .about__descripcion p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.glider_container {
+  width: 80%;
+  left: 10%;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .glider_container {
+    width: 85%;
+    left: 7%;
+  }
+}
+.glider_container .glider_card {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .glider_container .glider_card svg {
+    width: 100px !important;
+    height: 100px;
   }
 }

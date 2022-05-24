@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about {
+   width: 77%;
+   margin: 0 auto;
+
+   @include m.tablet {
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   h1, h2 {
+      color: v.$naranja;
+      font-weight: bold;
+   }
+   h1 {
+      font-size: 37px;
+   }
+   h2 {
+      font-size: 34px;
+   }
+
+   .about__contenedor {
+      display: flex;
+      flex-direction: row;
+      column-gap: 3rem;
+
+      @include m.tablet {
+         display: flex;
+         flex-direction: column;
+         gap: 3rem;
+      }
+
+      .about__descripcion {
+         p {
+            font-size: 22px;
+            font-weight: 300;
+         }
+      }
+   }
+}
+
+.glider_container {
+   width: 80%;
+   left: 10%;
+   position: relative;
+
+   @include m.tablet {
+      width: 85%;
+      left: 7%;
+   }
+
+   .glider_card {
+      display: flex;
+      justify-content: center;
+
+      svg {
+         @include m.tablet {
+            width: 100px !important;
+            height: 100px;
+         }
+      }
+   }
+   
+}

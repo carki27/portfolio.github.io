@@ -21,4 +21,32 @@
       object-fit: cover;
       height: 91.8vh;
    }
+
+   .social-media {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      position: absolute;
+      height: 100%;
+      top: 1px;
+      bottom: 0;
+      right: 15px;
+
+      @include m.tablet {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         position: absolute;
+         width: 100%;
+         height: initial;
+         bottom: 15px;
+         top: initial;
+         left: 0;
+      }
+
+      span, svg {
+         z-index: 1;
+      }
+     
+   }
 }

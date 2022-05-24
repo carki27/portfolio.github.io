@@ -17,8 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function inicarApp() {
-    hamburguerMenu()
-    loop()
+    hamburguerMenu();
+    loop();
+    tecnologiasCarousel();
 }
 
 function hamburguerMenu() {
@@ -80,4 +81,29 @@ function loop() {
           time = isEnd ? 2000 : borrando ? speedUp : normalSpeed;
 
     setTimeout(loop, time);
+}
+
+function tecnologiasCarousel() {
+    new Glider(document.querySelector('.glider'), {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        },
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    draggable: true,
+                    dots: '.dots',
+                    dragVelocity: 1
+                }
+            }
+        ]
+      });
 }
