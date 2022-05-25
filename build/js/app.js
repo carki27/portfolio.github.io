@@ -9,7 +9,8 @@ let i = 0,
     j = 0,
     fraseActual = [],
     borrando = false,
-    isEnd = false;
+    isEnd = false,
+    ubicacionPrincipal  = window.pageYOffset;
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function inicarApp() {
     hamburguerMenu();
+    esconderHeader();
     loop();
     tecnologiasCarousel();
 }
@@ -83,12 +85,24 @@ function loop() {
     setTimeout(loop, time);
 }
 
+function esconderHeader() {
+    window.onscroll = function() {
+        let Desplazamiento_Actual = window.pageYOffset;
+        if(ubicacionPrincipal >= Desplazamiento_Actual){
+            document.getElementById('navbar').style.top = '0';
+        }
+        else{
+            document.getElementById('navbar').style.top = '-100px';
+        }
+        ubicacionPrincipal = Desplazamiento_Actual;
+    }
+}
+
 function tecnologiasCarousel() {
     new Glider(document.querySelector('.glider'), {
         slidesToShow: 2,
         slidesToScroll: 2,
         draggable: true,
-        dots: '.dots',
         arrows: {
           prev: '.glider-prev',
           next: '.glider-next'
@@ -105,5 +119,5 @@ function tecnologiasCarousel() {
                 }
             }
         ]
-      });
+    });
 }

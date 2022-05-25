@@ -385,6 +385,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
+  transition: 0.3s ease;
 }
 header ul {
   margin: 0;
@@ -399,6 +400,10 @@ header a {
 }
 header .nav-menu a {
   color: #FFFFFF;
+  font-size: 20px;
+}
+header .nav-menu a:hover, header .nav-menu a:focus {
+  color: rgb(230, 88, 11);
 }
 
 .navegacion {
@@ -516,8 +521,15 @@ header .nav-menu a {
     left: 0;
   }
 }
-.video .social-media span, .video .social-media svg {
+.video .social-media svg {
   z-index: 1;
+}
+.video .social-media svg:hover {
+  cursor: pointer;
+  filter: brightness(75%);
+}
+.video .social-media svg:hover:last-of-type {
+  filter: invert(10%);
 }
 
 .wrapper {
@@ -632,9 +644,79 @@ header .nav-menu a {
   display: flex;
   justify-content: center;
 }
+.glider_container .glider_card svg {
+  -webkit-animation: scale-down-center2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-down-center2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 @media (max-width: 768px) {
   .glider_container .glider_card svg {
     width: 100px !important;
     height: 100px;
   }
+}
+.glider_container .glider_card svg:hover {
+  -webkit-animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+  animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+}
+
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scale-down-center2 {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-down-center2 {
+  0% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.portfolio {
+  background-color: rgb(0, 32, 32);
+}
+.portfolio h1 {
+  color: rgb(230, 88, 11);
+}
+.portfolio .portfolio__contenedor {
+  width: 85%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .portfolio .portfolio__contenedor {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.portfolio .portfolio__boton {
+  border: none;
+  padding: 0;
+  margin: 0;
 }

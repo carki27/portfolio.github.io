@@ -8,6 +8,8 @@ header {
    top: 0;
    z-index: 2;
 
+   transition: 0.3s ease;
+
    ul {
       margin: 0;
    }
@@ -22,6 +24,11 @@ header {
    .nav-menu {
       a {
          color: v.$blanco;
+         font-size: 20px;
+
+         &:hover, &:focus {
+            color: v.$naranja;
+         }
       }
    }
 }
