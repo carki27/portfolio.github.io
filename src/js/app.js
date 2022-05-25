@@ -3,7 +3,7 @@ const hamburguer = document.querySelector('.hamburguer'),
       navLinks = document.querySelectorAll('.nav-link'),
       textDisplay = document.getElementById('text'),
       textType = document.querySelector('.text-type'),
-      frases = ['Desarrollador Web.', 'Freelancer.'];
+      frases = ['&nbsp;Desarrollador Web.', '&nbsp;Freelancer.'];
 
 let i = 0,
     j = 0,
