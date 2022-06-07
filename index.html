@@ -130,99 +130,102 @@
         <h1 class="text-center p-4 m-0">Portafolio</h1>
 
         <!-- Grid del portafolio -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 portfolio__contenido">
-          <!-- 1 Sección portafolio -->
-          <div class="col text-center">
-            <button type="button" class="portfolio__boton" data-bs-toggle="modal" data-bs-target="#blogCafe">
-              <picture>
-                <source srcset="build/img/blogCafe.avif" type="image/avif" />
-                <source srcset="build/img/blogCafe.webp" type="image/webp" />
-                <img loading="lazy" width="200" height="300" src="build/img/blogCafe.jpg" alt="blog de cafe" />
-              </picture>
-            </button>
+        <div class="portfolio__contenido">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+            <!-- 1 Sección portafolio -->
+            <div class="col text-center">
+              <button type="button" class="portfolio__boton" data-bs-toggle="modal" data-bs-target="#blogCafe">
+                <picture>
+                  <source srcset="build/img/blogCafe.avif" type="image/avif" />
+                  <source srcset="build/img/blogCafe.webp" type="image/webp" />
+                  <img loading="lazy" width="200" height="300" src="build/img/blogCafe.jpg" alt="blog de cafe" />
+                </picture>
+              </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="blogCafe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Blog de Café <span> (realizado con HTML y CSS)</span></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <picture>
-                            <source srcset="build/img/blogCafe.avif" type="image/avif" />
-                            <source srcset="build/img/blogCafe.webp" type="image/webp" />
-                            <img loading="lazy" width="200" height="300" src="build/img/blogCafe.jpg" alt="blogCafe" />
-                          </picture>
-                        </div>
-                        <div class="carousel-item">
-                          <picture>
-                            <source srcset="build/img/blogCafe2.avif" type="image/avif" />
-                            <source srcset="build/img/blogCafe2.webp" type="image/webp" />
-                            <img loading="lazy" width="200" height="300" src="build/img/blogCafe2.jpg" alt="blogCafe2" />
-                          </picture>
-                        </div>
-                        <div class="carousel-item">
-                          <picture>
-                            <source srcset="build/img/blogCafe3.avif" type="image/avif" />
-                            <source srcset="build/img/blogCafe3.webp" type="image/webp" />
-                            <img loading="lazy" width="200" height="300" src="build/img/blogCafe3.jpg" alt="blogCafe3" />
-                          </picture>
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="iconify" data-icon="akar-icons:chevron-left" style="color: #717171" data-width="50" data-height="50"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="iconify" data-icon="akar-icons:chevron-right" style="color: #717171" data-width="50" data-height="50"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
+              <!-- Modal -->
+              <div class="modal fade" id="blogCafe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Blog de Café <span> (realizado con HTML y CSS)</span></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <div class="portfolio__enlaces">
-                      <button type="button" class="btn btn-dark">
-                        Repositorio
-                        <span class="iconify" data-icon="akar-icons:github-fill" style="color: white" data-width="35" data-height="35"></span>
-                      </button>
-                      <button type="button" class="btn btn-dark">
-                        Link
-                        <span class="iconify" data-icon="akar-icons:link-chain" style="color: white" data-width="50" data-height="50"></span>
-                      </button>
+                    <div class="modal-body">
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <picture>
+                              <source srcset="build/img/blogCafe.avif" type="image/avif" />
+                              <source srcset="build/img/blogCafe.webp" type="image/webp" />
+                              <img loading="lazy" width="200" height="300" src="build/img/blogCafe.jpg" alt="blogCafe" />
+                            </picture>
+                          </div>
+                          <div class="carousel-item">
+                            <picture>
+                              <source srcset="build/img/blogCafe2.avif" type="image/avif" />
+                              <source srcset="build/img/blogCafe2.webp" type="image/webp" />
+                              <img loading="lazy" width="200" height="300" src="build/img/blogCafe2.jpg" alt="blogCafe2" />
+                            </picture>
+                          </div>
+                          <div class="carousel-item">
+                            <picture>
+                              <source srcset="build/img/blogCafe3.avif" type="image/avif" />
+                              <source srcset="build/img/blogCafe3.webp" type="image/webp" />
+                              <img loading="lazy" width="200" height="300" src="build/img/blogCafe3.jpg" alt="blogCafe3" />
+                            </picture>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="iconify" data-icon="akar-icons:chevron-left" style="color: #717171" data-width="50" data-height="50"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="iconify" data-icon="akar-icons:chevron-right" style="color: #717171" data-width="50" data-height="50"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="portfolio__enlaces">
+                        <button type="button" class="btn btn-dark">
+                          Repositorio
+                          <span class="iconify" data-icon="akar-icons:github-fill" style="color: white" data-width="35" data-height="35"></span>
+                        </button>
+                        <button type="button" class="btn btn-dark">
+                          Link
+                          <span class="iconify" data-icon="akar-icons:link-chain" style="color: white" data-width="50" data-height="50"></span>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- termina modal -->
             </div>
-            <!-- termina modal -->
-          </div>
-          <!-- Termina 1 Seccion portafolio-->
 
-          <div class="col text-center">
-            <picture>
-              <source srcset="build/img/deleteWeb.avif" type="image/avif" />
-              <source srcset="build/img/deleteWeb.webp" type="image/webp" />
-              <img loading="lazy" width="200" height="300" src="build/img/deleteWeb.jpg" alt="delete" />
-            </picture>
+            <!-- Termina 1 Seccion portafolio-->
+
+            <div class="col text-center">
+              <picture>
+                <source srcset="build/img/deleteWeb.avif" type="image/avif" />
+                <source srcset="build/img/deleteWeb.webp" type="image/webp" />
+                <img loading="lazy" width="200" height="300" src="build/img/deleteWeb.jpg" alt="delete" />
+              </picture>
+            </div>
+
+            <div class="col text-center">
+              <picture>
+                <source srcset="build/img/bienesRaices.avif" type="image/avif" />
+                <source srcset="build/img/bienesRaices.webp" type="image/webp" />
+                <img loading="lazy" width="200" height="300" src="build/img/bienesRaices.jpg" alt="Bienes Raices" />
+              </picture>
+            </div>
+
+            <div class="col text-center">4</div>
           </div>
 
-          <div class="col text-center">
-            <picture>
-              <source srcset="build/img/bienesRaices.avif" type="image/avif" />
-              <source srcset="build/img/bienesRaices.webp" type="image/webp" />
-              <img loading="lazy" width="200" height="300" src="build/img/bienesRaices.jpg" alt="Bienes Raices" />
-            </picture>
-          </div>
-
-          <div class="col text-center">4</div>
+          <!-- Termina Grid del portafolio -->
         </div>
-
-        <!-- Termina Grid del portafolio -->
       </div>
     </div>
     <!-- Termina sección portfolio -->

@@ -37,7 +37,7 @@ function aparecerElementos() {
   ScrollReveal().reveal('.about__foto img', { distance: '150%', origin: 'left', opacity: null, delay: 200 });
   ScrollReveal().reveal('.about__descripcion p', { distance: '150%', origin: 'bottom', opacity: null });
   ScrollReveal().reveal('.glider_container', { easing: 'ease-in' });
-  ScrollReveal().reveal('.portfolio__contenido', { scale: 0.7 });
+  ScrollReveal().reveal('.portfolio__contenido');
 }
 
 function hamburguerMenu() {
