@@ -2,59 +2,61 @@
 @use 'base/variables' as v;
 
 .video {
-   position: relative;
-   height: 100%;
-   overflow: hidden;
- 
-   .overlay {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-   }
+  position: relative;
+  height: 100%;
+  overflow: hidden;
 
-   video {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-      height: 91.8vh;
-   }
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-   .social-media {
+  video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 91.8vh;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    height: 100%;
+    top: 1px;
+    bottom: 0;
+    right: 15px;
+
+    @include m.tablet {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-around;
       position: absolute;
-      height: 100%;
-      top: 1px;
-      bottom: 0;
-      right: 15px;
+      width: 100%;
+      height: initial;
+      bottom: 15px;
+      top: initial;
+      left: 0;
+    }
 
-      @include m.tablet {
-         display: flex;
-         flex-direction: row;
-         justify-content: space-around;
-         position: absolute;
-         width: 100%;
-         height: initial;
-         bottom: 15px;
-         top: initial;
-         left: 0;
+    svg {
+      z-index: 1;
+      transition: 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(75%);
+        transition: 0.3s ease;
+
+        &:last-of-type {
+          filter: invert(10%);
+        }
       }
-
-      svg {
-         z-index: 1;
-
-         &:hover {
-            cursor: pointer;
-            filter: brightness(75%);
-
-            &:last-of-type {
-               filter: invert(10%);
-            }
-         }
-      }
-   }
+    }
+  }
 }
