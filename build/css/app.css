@@ -523,10 +523,12 @@ header .nav-menu a:hover, header .nav-menu a:focus {
 }
 .video .social-media svg {
   z-index: 1;
+  transition: 0.3s ease;
 }
 .video .social-media svg:hover {
   cursor: pointer;
   filter: brightness(75%);
+  transition: 0.3s ease;
 }
 .video .social-media svg:hover:last-of-type {
   filter: invert(10%);
@@ -602,7 +604,8 @@ header .nav-menu a:hover, header .nav-menu a:focus {
     margin: 0 auto;
   }
 }
-.about h1, .about h2 {
+.about h1,
+.about h2 {
   color: rgb(230, 88, 11);
   font-weight: bold;
 }
@@ -624,7 +627,8 @@ header .nav-menu a:hover, header .nav-menu a:focus {
     gap: 3rem;
   }
 }
-.about .about__contenedor .about__descripcion p {
+
+.about__descripcion p {
   font-size: 22px;
   font-weight: 300;
 }
@@ -719,4 +723,34 @@ header .nav-menu a:hover, header .nav-menu a:focus {
   border: none;
   padding: 0;
   margin: 0;
+}
+.portfolio .portfolio__enlaces {
+  display: flex;
+  gap: 25px;
+}
+.portfolio .portfolio__enlaces button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-dialog {
+  width: 80% !important;
+  max-width: initial !important;
+}
+@media (max-width: 768px) {
+  .modal-dialog {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+}
+.modal-dialog span {
+  color: rgb(230, 88, 11);
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .modal-footer {
+    justify-content: center !important;
+  }
 }
