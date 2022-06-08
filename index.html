@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
 
   <body>
@@ -130,17 +130,19 @@
         <h1 class="text-center p-4 m-0">Portafolio</h1>
 
         <!-- Grid del portafolio -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 portfolio__contenido">
-          <!-- 1 Sección portafolio -->
-          <div class="col text-center">
-            <button type="button" class="portfolio__boton" data-bs-toggle="modal" data-bs-target="#blogCafe">
-              <picture>
-                <source srcset="build/img/blogCafe.avif" type="image/avif" />
-                <source srcset="build/img/blogCafe.webp" type="image/webp" />
-                <img loading="lazy" width="200" height="300" src="build/img/blogCafe.jpg" alt="blog de cafe" />
-              </picture>
-            </button>
+        <div class="portfolio__contenido">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+            <!-- 1 Sección portafolio -->
+            <div class="col text-center">
+              <button type="button" class="portfolio__boton" data-bs-toggle="modal" data-bs-target="#blogCafe">
+                <picture>
+                  <source srcset="build/img/blogCafe.avif" type="image/avif" />
+                  <source srcset="build/img/blogCafe.webp" type="image/webp" />
+                  <img loading="lazy" width="200" height="300" src="build/img/blogCafe.jpg" alt="blog de cafe" />
+                </picture>
+              </button>
 
+<<<<<<< HEAD
             <!-- Modal -->
             <div class="modal fade" id="blogCafe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -200,43 +202,106 @@
                         Link
                         <span class="iconify" data-icon="akar-icons:link-chain" style="color: white" data-width="40" data-height="40"></span>
                       </button>
+=======
+              <!-- Modal -->
+              <div class="modal fade" id="blogCafe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Blog de Café <span> (realizado con HTML y CSS)</span></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <picture>
+                              <source media="(min-width:480px)" srcset="build/img/blogCafe.avif" type="image/avif" />
+                              <source media="(min-width:480px)" srcset="build/img/blogCafe.webp" type="image/webp" />
+                              <source srcset="build/img/blogCafeMobile.avif" type="image/avif" />
+                              <source srcset="build/img/blogCafeMobile.webp" type="image/webp" />
+                              <img loading="lazy" width="200" height="300" src="build/img/blogCafe.jpg" alt="blogCafe" />
+                            </picture>
+                          </div>
+                          <div class="carousel-item">
+                            <picture>
+                              <source media="(min-width:480px)" srcset="build/img/blogCafe2.avif" type="image/avif" />
+                              <source media="(min-width:480px)" srcset="build/img/blogCafe2.webp" type="image/webp" />
+                              <source srcset="build/img/blogCafe2Mobile.avif" type="image/avif" />
+                              <source srcset="build/img/blogCafe2Mobile.webp" type="image/webp" />
+                              <img loading="lazy" width="200" height="300" src="build/img/blogCafe2.jpg" alt="blogCafe2" />
+                            </picture>
+                          </div>
+                          <div class="carousel-item">
+                            <picture>
+                              <source media="(min-width:480px)" srcset="build/img/blogCafe3.avif" type="image/avif" />
+                              <source media="(min-width:480px)" srcset="build/img/blogCafe3.webp" type="image/webp" />
+                              <source srcset="build/img/blogCafe3Mobile.avif" type="image/avif" />
+                              <source srcset="build/img/blogCafe3Mobile.webp" type="image/webp" />
+                              <img loading="lazy" width="200" height="300" src="build/img/blogCafe3.jpg" alt="blogCafe3" />
+                            </picture>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="iconify" data-icon="akar-icons:chevron-left" style="color: #717171" data-width="50" data-height="50"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="iconify" data-icon="akar-icons:chevron-right" style="color: #717171" data-width="50" data-height="50"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="portfolio__enlaces">
+                        <button type="button" class="btn btn-dark">
+                          Repositorio
+                          <span class="iconify" data-icon="akar-icons:github-fill" style="color: white" data-width="35" data-height="35"></span>
+                        </button>
+                        <button type="button" class="btn btn-dark">
+                          Link
+                          <span class="iconify" data-icon="akar-icons:link-chain" style="color: white" data-width="50" data-height="50"></span>
+                        </button>
+                      </div>
+>>>>>>> 7c7290c9fcdd91fae0e7619dba8f53188f5cef78
                     </div>
                   </div>
                 </div>
               </div>
+              <!-- termina modal -->
             </div>
-            <!-- termina modal -->
-          </div>
-          <!-- Termina 1 Seccion portafolio-->
 
-          <div class="col text-center">
-            <picture>
-              <source srcset="build/img/deleteWeb.avif" type="image/avif" />
-              <source srcset="build/img/deleteWeb.webp" type="image/webp" />
-              <img loading="lazy" width="200" height="300" src="build/img/deleteWeb.jpg" alt="delete" />
-            </picture>
+            <!-- Termina 1 Seccion portafolio-->
+
+            <div class="col text-center">
+              <picture>
+                <source srcset="build/img/deleteWeb.avif" type="image/avif" />
+                <source srcset="build/img/deleteWeb.webp" type="image/webp" />
+                <img loading="lazy" width="200" height="300" src="build/img/deleteWeb.jpg" alt="delete" />
+              </picture>
+            </div>
+
+            <div class="col text-center">
+              <picture>
+                <source srcset="build/img/bienesRaices.avif" type="image/avif" />
+                <source srcset="build/img/bienesRaices.webp" type="image/webp" />
+                <img loading="lazy" width="200" height="300" src="build/img/bienesRaices.jpg" alt="Bienes Raices" />
+              </picture>
+            </div>
+
+            <div class="col text-center">4</div>
           </div>
 
-          <div class="col text-center">
-            <picture>
-              <source srcset="build/img/bienesRaices.avif" type="image/avif" />
-              <source srcset="build/img/bienesRaices.webp" type="image/webp" />
-              <img loading="lazy" width="200" height="300" src="build/img/bienesRaices.jpg" alt="Bienes Raices" />
-            </picture>
-          </div>
-
-          <div class="col text-center">4</div>
+          <!-- Termina Grid del portafolio -->
         </div>
-
-        <!-- Termina Grid del portafolio -->
       </div>
     </div>
     <!-- Termina sección portfolio -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="build/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+    <script src="build/js/iconify.min.js"></script>
+    <script src="build/js/glider.min.js"></script>
     <script src="build/js/app.js"></script>
   </body>
 </html>

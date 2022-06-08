@@ -35,11 +35,7 @@ function aparecerElementos() {
   }
 
   ScrollReveal().reveal('.about__foto img', { distance: '150%', origin: 'left', opacity: null, delay: 200 });
-<<<<<<< HEAD
-  ScrollReveal().reveal('.about__descripcion p');
-=======
   ScrollReveal().reveal('.about__descripcion p', { distance: '150%', origin: 'right', opacity: null });
->>>>>>> 7c7290c9fcdd91fae0e7619dba8f53188f5cef78
   ScrollReveal().reveal('.glider_container', { easing: 'ease-in' });
   ScrollReveal().reveal('.portfolio__contenido');
 }
