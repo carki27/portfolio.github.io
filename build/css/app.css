@@ -731,10 +731,13 @@ header .nav-menu a:hover, header .nav-menu a:focus {
   display: flex;
   gap: 25px;
 }
-.portfolio .portfolio__enlaces button {
+.portfolio .portfolio__enlaces a {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.portfolio video {
+  width: 100%;
 }
 
 .modal-dialog {

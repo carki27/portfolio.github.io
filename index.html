@@ -142,7 +142,7 @@
                 </picture>
               </button>
 
-              <!-- Modal -->
+              <!-- Modal Blog de Cafe-->
               <div class="modal fade" id="blogCafe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -186,21 +186,21 @@
                           <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="iconify" data-icon="akar-icons:chevron-right" style="color: #717171" data-width="40" data-height="40"></span>
+                          <span class="iconify" data-icon="akar-icons:chevron-right" style="color: #717171" data-width="50" data-height="50"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
                     </div>
                     <div class="modal-footer">
                       <div class="portfolio__enlaces">
-                        <button type="button" class="btn btn-dark">
+                        <a href="https://github.com/carki27/blogdeCafe" type="button" class="btn btn-dark" target="_blank">
                           Repositorio
                           <span class="iconify" data-icon="akar-icons:github-fill" style="color: white" data-width="35" data-height="35"></span>
-                        </button>
-                        <button type="button" class="btn btn-dark">
-                          Link
-                          <span class="iconify" data-icon="akar-icons:link-chain" style="color: white" data-width="50" data-height="50"></span>
-                        </button>
+                        </a>
+                        <a href="https://carki27.github.io/blogdeCafe/" type="button" class="btn btn-dark" target="_blank">
+                          Enlace
+                          <span class="iconify" data-icon="akar-icons:link-chain" style="color: white" data-width="40" data-height="40"></span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -208,23 +208,115 @@
               </div>
               <!-- termina modal -->
             </div>
-
             <!-- Termina 1 Seccion portafolio-->
 
+            <!-- Empieza 2 Seccion portafolio-->
             <div class="col text-center">
-              <picture>
-                <source srcset="build/img/deleteWeb.avif" type="image/avif" />
-                <source srcset="build/img/deleteWeb.webp" type="image/webp" />
-                <img loading="lazy" width="200" height="300" src="build/img/deleteWeb.jpg" alt="delete" />
-              </picture>
+              <button type="button" class="portfolio__boton" data-bs-toggle="modal" data-bs-target="#delete">
+                <picture>
+                  <source srcset="build/img/deleteWeb.avif" type="image/avif" />
+                  <source srcset="build/img/deleteWeb.webp" type="image/webp" />
+                  <img loading="lazy" width="200" height="300" src="build/img/deleteWeb.jpg" alt="delete" />
+                </picture>
+              </button>
+              <!-- Modal Delete-->
+              <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Página Web <span> (realizado con HTML y CSS)</span></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="carouselDeleteWeb" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <picture>
+                              <source media="(min-width:480px)" srcset="build/img/deleteWeb.avif" type="image/avif" />
+                              <source media="(min-width:480px)" srcset="build/img/deleteWeb.webp" type="image/webp" />
+                              <source srcset="build/img/deleteWebMobile.avif" type="image/avif" />
+                              <source srcset="build/img/deleteWebMobile.webp" type="image/webp" />
+                              <img loading="lazy" width="200" height="300" src="build/img/deleteWeb.jpg" alt="blogCafe" />
+                            </picture>
+                          </div>
+                          <div class="carousel-item">
+                            <picture>
+                              <source media="(min-width:480px)" srcset="build/img/deleteWeb2.avif" type="image/avif" />
+                              <source media="(min-width:480px)" srcset="build/img/deleteWeb2.webp" type="image/webp" />
+                              <source srcset="build/img/deleteWebMobile2.avif" type="image/avif" />
+                              <source srcset="build/img/deleteWebMobile2.webp" type="image/webp" />
+                              <img loading="lazy" width="200" height="300" src="build/img/deleteWeb2.jpg" alt="deleteWeb" />
+                            </picture>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDeleteWeb" data-bs-slide="prev">
+                          <span class="iconify" data-icon="akar-icons:chevron-left" style="color: #717171" data-width="50" data-height="50"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDeleteWeb" data-bs-slide="next">
+                          <span class="iconify" data-icon="akar-icons:chevron-right" style="color: #717171" data-width="50" data-height="50"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="portfolio__enlaces">
+                        <a href="https://github.com/carki27/delete" type="button" class="btn btn-dark" target="_blank">
+                          Repositorio
+                          <span class="iconify" data-icon="akar-icons:github-fill" style="color: white" data-width="35" data-height="35"></span>
+                        </a>
+                        <a href="https://carki27.github.io/delete/ " type="button" class="btn btn-dark" target="_blank">
+                          Enlace
+                          <span class="iconify" data-icon="akar-icons:link-chain" style="color: white" data-width="40" data-height="40"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- termina modal -->
             </div>
+            <!-- Termina 2s Seccion Portafolio -->
 
             <div class="col text-center">
-              <picture>
-                <source srcset="build/img/bienesRaices.avif" type="image/avif" />
-                <source srcset="build/img/bienesRaices.webp" type="image/webp" />
-                <img loading="lazy" width="200" height="300" src="build/img/bienesRaices.jpg" alt="Bienes Raices" />
-              </picture>
+              <button type="button" class="portfolio__boton" data-bs-toggle="modal" data-bs-target="#bienesRaices">
+                <picture>
+                  <source srcset="build/img/bienesRaices.avif" type="image/avif" />
+                  <source srcset="build/img/bienesRaices.webp" type="image/webp" />
+                  <img loading="lazy" width="200" height="300" src="build/img/bienesRaices.jpg" alt="Bienes Raices" />
+                </picture>
+              </button>
+
+              <!-- Modal bienes Raices-->
+              <div class="modal fade" id="bienesRaices" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Página Web <span> (realizado con HTML y CSS)</span></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <video muted controls>
+                        <source src="video/bienesRaices.webm" type="video/webm" />
+                        <source src="video/bienesRaices.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="portfolio__enlaces">
+                        <a href="https://github.com/carki27/delete" type="button" class="btn btn-dark" target="_blank">
+                          Repositorio
+                          <span class="iconify" data-icon="akar-icons:github-fill" style="color: white" data-width="35" data-height="35"></span>
+                        </a>
+                        <a href="https://carki27.github.io/delete/ " type="button" class="btn btn-dark" target="_blank">
+                          Enlace
+                          <span class="iconify" data-icon="akar-icons:link-chain" style="color: white" data-width="40" data-height="40"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- termina modal -->
             </div>
 
             <div class="col text-center">4</div>
