@@ -3,7 +3,8 @@ const hamburguer = document.querySelector('.hamburguer'),
   navLinks = document.querySelectorAll('.nav-link'),
   textDisplay = document.getElementById('text'),
   textType = document.querySelector('.text-type'),
-  frases = ['Desarrollador Web.', 'Freelancer.'];
+  frases = ['Desarrollador Web.', 'Freelancer.'],
+  bienesRaicesVideo = document.getElementById('bienesRaicesVideo');
 
 let i = 0,
   j = 0,
@@ -15,6 +16,11 @@ let i = 0,
 document.addEventListener('DOMContentLoaded', function () {
   inicarApp();
 });
+document.addEventListener('keydown', function (event) {
+  if (event.keyCode === 27) {
+    bienesRaicesVideo.pause();
+  }
+});
 
 function inicarApp() {
   aparecerElementos();
@@ -22,6 +28,7 @@ function inicarApp() {
   esconderHeader();
   loop();
   tecnologiasCarousel();
+  pause();
 }
 
 function aparecerElementos() {
@@ -134,4 +141,8 @@ function tecnologiasCarousel() {
       },
     ],
   });
+}
+
+function pause() {
+  bienesRaicesVideo.pause();
 }
